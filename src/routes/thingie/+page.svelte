@@ -18,6 +18,18 @@
       ],
     },
   ];
+
+  import Artist from "../../components/Artist.svelte";
+  import Album from "../../components/Album.svelte";
 </script>
 
-<p>This is amazing!</p>
+{#each artists as artist}
+  <Artist artistName={artist.name} />
+  {#each artist.albums as album}
+    <Album
+      albumName={album.name}
+      albumYear={album.year}
+      albumTracks={album.tracks}
+    />
+  {/each}
+{/each}
