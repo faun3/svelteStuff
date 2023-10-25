@@ -10,9 +10,9 @@
 </script>
 
 <div>
-  <span>{albumName}</span>
-  <span> - Released in {albumYear}</span>
-  <ul>
+  <span class="album-name">{albumName}</span>
+  <span class="album-year"> - Released in {albumYear}</span>
+  <ul class="album-list">
     {#each albumTracks as track}
       <li>
         {track.title} - {track.length}
