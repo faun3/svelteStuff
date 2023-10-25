@@ -2,7 +2,8 @@
 </script>
 
 <button>
-  <slot>Placeholder</slot>
+  <slot name="icon">*</slot>
+  <slot name="text">Placeholder</slot>
 </button>
 
 <style lang="scss">

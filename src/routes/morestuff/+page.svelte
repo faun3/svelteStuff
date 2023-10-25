@@ -3,8 +3,6 @@
 </script>
 
 <Button>
-  <span>This is just like passing children in React</span>
-  <div>But a whole lot easier!</div>
-  <button>It even works with weird stuff like this</button>
-  <input type="text" value="Or this" />
+  <span slot="text">This is just like passing children in React</span>
+  <span slot="icon">+</span>
 </Button>
