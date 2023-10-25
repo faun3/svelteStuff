@@ -3,6 +3,7 @@
     title: string;
     length: string;
   };
+  // anything with "export" in front of it becomes a component prop
   export let albumName: string;
   export let albumYear: number;
   export let albumTracks: TTrack[];

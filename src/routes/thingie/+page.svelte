@@ -1,5 +1,5 @@
 <script lang="ts">
-  let artists = [
+  const artists = [
     {
       name: "Fleetwood Mac",
       albums: [
@@ -19,6 +19,7 @@
     },
   ];
 
+  // just importing components as normal
   import Artist from "../../components/Artist.svelte";
   import Album from "../../components/Album.svelte";
 </script>
