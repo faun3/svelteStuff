@@ -41,7 +41,7 @@
     }
 </script>
 
-<form action="" on:submit={addTodo}>
+<form action="" on:submit|preventDefault={addTodo}>
     <input type="text" bind:value={text}>
     <button>Add</button>
 </form>
